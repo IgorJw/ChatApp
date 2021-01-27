@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    background-color: #0094FF;
+    display: flex;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-grow: 1;
+    padding:5px 30px;
+}
+h1{
+    width: 1px;
+}
+h1 span{
+    margin-left: 35px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-left: auto;
+}
+li{
+    list-style: none;
+}
+
+.wrapper{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 450px;
+    height: 300px;
+    border: 1px solid #0094FF;
+    border-radius: 0 0 20px 0;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.wrapper span {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #0094FF;
+    color: #0094FF;
+    font-weight: bold;
+}
+
+.entry_wrapper{
+    width: 100%;
+    height: 87%;
+    background-color: #0094FF;
+    border-radius: 0 0 20px 0;
+}
+
+form{
+    width: 50%;
+    position: relative;
+    top: 40px;
+    left: -70px;
+    text-align: start;
+    margin: auto;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    color:white;
+    font-weight: 500;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+input[type=text]{
+    height: 25px;
+    border: none;
+    outline: none;
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    width: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.active_users_wrapper{
+    border-right: 4px solid #0094FF;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.active_users_label{
+    height:8vh;
+    text-align: center;
+}
+.active_users_label span{
+    display: inline-block;
+    color: #0094FF;
+    font-weight: bold;
+    padding: 3vh;
+    width: 100%;
+}
+.active_user{
+    display: inline-block;
+    text-align: center;
+    color: #0094FF;
+    font-weight: bold;
+    padding-top: 3vh;
+    color: #12D448;
+}
+.chat{
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+.room_name{
+    position: sticky;
+    z-index: 2;
+    top:0;
+    background-color: #0094FF;
+    width: 100%;
+    background-color: #C3C3C3;
+    text-align: center;
+    color: #0094FF;
+    font-weight: bold;
+}
+
+.room_name span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.msg_form_container{
+    position: sticky;
+    bottom:8.5%;
+    background-color: #C3C3C3;
+    z-index: 1;
+    width: 100%;
+}
+#msg_form{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+#input_msg{
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+#submit_msg{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-image: url("/public/svg/send.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.msg_container{
+    overflow: auto;
+}
+
+.msg_wrapper{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    z-index: -1;
+}
+.my_msg{
+    position: relative;
+    text-align: end;
+    background-color: #0094FF;
+    margin-right: 35px;
+    float: right;
+    min-width: 40px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 35px 30px 0 35px;
+}
+.my_date{
+   float: right;
+   font-size: 12px;
+   position: relative;
+   top:40%;
+   margin-right: 8px;
+   color: #8f8e8e;
+   font-weight: bold;
+}
+
+.msg{
+    position: relative;
+    background-color: #8f8e8e;
+    margin-left: 15px;
+    float: left;
+    min-width: 80px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px 35px 35px 0px;
+}
+.date{
+   float: left;
+   font-size: 12px;
+   position: relative;
+   top:40%;
+   margin-left: 8px;
+   color: #8f8e8e;
+   font-weight: bold;
+}
+.msg_author{
+   float: left;
+   font-size: 16px;
+   position: relative;
+   top:40%;
+   margin-left: 8px;
+   color: #0094FF;
+   font-weight: bold;
+}

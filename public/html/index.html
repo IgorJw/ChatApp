@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Chat <span>App</span></h1>
+            <ul>
+                <li><a href="/html/index.html">Rooms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://github.com/IgorJw/ChatApp">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span>Enter</span>
+        <div class="entry_wrapper">
+            <form method="GET" class="entry_form" action="chat.html" autocomplete="off">
+                    <label for="username">Username: 
+                    <input id="username" name="username" type="text"></label>
+                    <label>Room:
+                    <input id="room" name="room" type="text"></label>
+                    <button  type="submit">Enter Room</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

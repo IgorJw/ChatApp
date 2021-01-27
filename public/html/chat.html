@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Chat <span>App</span></h1>
+            <ul>
+                <li><a href="/html/index.html">Rooms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://github.com/IgorJw/ChatApp">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="active_users_wrapper">
+            
+            
+        </div>
+        <div class="chat">
+            <div class="room_name">
+                <span>Room Test</span>
+            </div>
+            <div class="msg_container">
+                
+            </div>
+            <div class="msg_form_container">
+                <form id="msg_form" autocomplete="off">
+                    <input type="text" id="input_msg" >
+                    <button type="submit" id="submit_msg"></button>
+                </form>
+            </div>
+
+        </div>
+    </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+            integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+            crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
