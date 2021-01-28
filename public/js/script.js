@@ -32,7 +32,7 @@ socket.on('message',message => {
 socket.on('active_users', ({room,users}) =>{
     active_users.innerHTML =`
     <div class="active_users_label">
-        <span> Active Users : </span>
+        <span> Active Users </span>
     </div>
     ${users.map(user => `
     

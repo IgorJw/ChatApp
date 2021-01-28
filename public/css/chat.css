@@ -49,12 +49,13 @@ li{
 
 
 .active_users_wrapper{
-    border-right: 4px solid #0094FF;
+    background-color: #1368A6;
     height: 100%;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    
+    color: white;
+    font-weight: bold;
 }
 .active_users_label{
     height:8vh;
@@ -62,15 +63,12 @@ li{
 }
 .active_users_label span{
     display: inline-block;
-    color: #0094FF;
-    font-weight: bold;
     padding: 3vh;
     width: 100%;
 }
 .active_user{
     display: inline-block;
     text-align: center;
-    color: #0094FF;
     font-weight: bold;
     padding-top: 3vh;
     color: #12D448;

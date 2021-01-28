@@ -134,10 +134,9 @@ button{
 .active_user{
     display: inline-block;
     text-align: center;
-    color: #0094FF;
     font-weight: bold;
     padding-top: 3vh;
-    color: #12D448;
+    color: white;
 }
 .chat{
     height: 100%;
