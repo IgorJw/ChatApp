@@ -6,6 +6,8 @@ const input = document.getElementById("input_msg")
 const submit = document.getElementById("submit")
 const active_users = document.querySelector('.active_users_wrapper')
 const roomName = document.querySelector('.room_name span')
+let today = new Date()
+let actual_time = today.toLocaleTimeString()
 
 
 const { username,room } = Qs.parse(location.search,{
@@ -65,7 +67,7 @@ function outputMyMessage(message){
     const my_msg = document.createElement('div')
     const my_date = document.createElement('div')
     my_date.classList.add('my_date')
-    my_date.innerHTML = "6.42PM"
+    my_date.innerHTML = actual_time
     my_msg.classList.add('my_msg')
     my_msg.innerHTML = `${message}`
     msg_wrapper.classList.add('msg_wrapper')
